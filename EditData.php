@@ -11,7 +11,7 @@
 	  $query = $koneksi->prepare("UPDATE barang SET kode_barang=:kode, nama_barang=:nama, harga_satuan=:harga WHERE id=:id");
 	  	$query->bindParam(":id", $id);
 	    $query->bindParam(":kode", $kode);
-	    $query->bindParam(":nama", $nama);
+	    $query->bindParam(":nama", $nama); 
 	    $query->bindParam(":harga", $harga);
 	  if($query->execute()){
 	    echo "<script>alert('Data Berhasil Di Perbaharui')</script>";
